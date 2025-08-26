@@ -33,9 +33,9 @@
             lblModulo = new Label();
             cmdUsuario = new TextBox();
             cmdContraseña = new TextBox();
-            lstModulo = new ComboBox();
             cmdAceptar = new Button();
             cmdCancelar = new Button();
+            lstModulo = new ComboBox();
             SuspendLayout();
             // 
             // lblUsuario
@@ -79,14 +79,6 @@
             cmdContraseña.Size = new Size(178, 27);
             cmdContraseña.TabIndex = 4;
             // 
-            // lstModulo
-            // 
-            lstModulo.FormattingEnabled = true;
-            lstModulo.Location = new Point(201, 238);
-            lstModulo.Name = "lstModulo";
-            lstModulo.Size = new Size(178, 28);
-            lstModulo.TabIndex = 5;
-            // 
             // cmdAceptar
             // 
             cmdAceptar.BackColor = SystemColors.ControlLightLight;
@@ -106,15 +98,24 @@
             cmdCancelar.Text = "Cancelar";
             cmdCancelar.UseVisualStyleBackColor = true;
             // 
+            // lstModulo
+            // 
+            lstModulo.FormattingEnabled = true;
+            lstModulo.Items.AddRange(new object[] { "Administracion ", "Sistemas", "Compras", "Ventas" });
+            lstModulo.Location = new Point(201, 238);
+            lstModulo.Name = "lstModulo";
+            lstModulo.Size = new Size(178, 28);
+            lstModulo.TabIndex = 8;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(800, 450);
+            Controls.Add(lstModulo);
             Controls.Add(cmdCancelar);
             Controls.Add(cmdAceptar);
-            Controls.Add(lstModulo);
             Controls.Add(cmdContraseña);
             Controls.Add(cmdUsuario);
             Controls.Add(lblModulo);
@@ -133,8 +134,8 @@
         private Label lblModulo;
         private TextBox cmdUsuario;
         private TextBox cmdContraseña;
-        private ComboBox lstModulo;
         private Button cmdAceptar;
         private Button cmdCancelar;
+        private ComboBox lstModulo;
     }
 }

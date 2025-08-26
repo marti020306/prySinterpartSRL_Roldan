@@ -1,3 +1,5 @@
+using prySinterpartSRL_Roldan; // Asegúrate de que el espacio de nombres sea correcto
+
 namespace prySinterpartSRL_Roldan
 {
     public partial class frmBienvenida : Form
@@ -7,9 +9,9 @@ namespace prySinterpartSRL_Roldan
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label1_click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

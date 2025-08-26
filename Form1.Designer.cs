@@ -41,7 +41,6 @@
             lblbienvenido.Size = new Size(269, 60);
             lblbienvenido.TabIndex = 0;
             lblbienvenido.Text = "Bienvenido!";
-            lblbienvenido.Click += label1_Click;
             // 
             // lblSinterpartSRL
             // 
