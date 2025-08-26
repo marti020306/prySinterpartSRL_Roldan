@@ -16,5 +16,16 @@ namespace prySinterpartSRL_Roldan
         {
             InitializeComponent();
         }
+
+        private void cmdUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdAceptar_Click(object sender, EventArgs e)
+        {
+            frmBienvenida frmBienvenida = new frmBienvenida();
+            frmBienvenida.ShowDialog();
+        }
     }
 }
