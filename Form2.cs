@@ -27,5 +27,13 @@ namespace prySinterpartSRL_Roldan
             frmBienvenida frmBienvenida = new frmBienvenida();
             frmBienvenida.ShowDialog();
         }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            txtUsuario.Text = "";
+            txtContraseña.Text = "";
+
+            lstModulo.SelectedIndex = -1;
+        }
     }
 }
