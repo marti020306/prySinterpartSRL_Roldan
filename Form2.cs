@@ -19,7 +19,21 @@ namespace prySinterpartSRL_Roldan
 
         private void cmdUsuario_TextChanged(object sender, EventArgs e)
         {
+            cmdUsuario_TextChanged(sender, e, txtContraseña);
+        }
 
+        private void cmdUsuario_TextChanged(object sender, EventArgs e, TextBox txtContraseña)
+        {
+            if (txtUsuario.Text == "")
+            {
+
+                txtContraseña.Enabled = false;
+
+            }
+            else
+            {
+                txtContraseña.Enabled = true;
+            }
         }
 
         private void cmdAceptar_Click(object sender, EventArgs e)

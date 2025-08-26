@@ -78,6 +78,7 @@
             // 
             // txtContraseña
             // 
+            txtContraseña.Enabled = false;
             txtContraseña.Location = new Point(176, 121);
             txtContraseña.Margin = new Padding(3, 2, 3, 2);
             txtContraseña.MaxLength = 10;
@@ -89,6 +90,7 @@
             // cmdAceptar
             // 
             cmdAceptar.BackColor = SystemColors.ActiveBorder;
+            cmdAceptar.Enabled = false;
             cmdAceptar.Location = new Point(453, 76);
             cmdAceptar.Margin = new Padding(3, 2, 3, 2);
             cmdAceptar.Name = "cmdAceptar";
