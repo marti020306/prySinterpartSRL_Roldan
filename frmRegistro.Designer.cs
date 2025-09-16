@@ -35,66 +35,62 @@
             txtContraseña = new TextBox();
             cmdAceptar = new Button();
             cmdCancelar = new Button();
-            lstModulo = new ComboBox();
+            cmbModulo = new ComboBox();
             SuspendLayout();
             // 
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
-            lblUsuario.Location = new Point(57, 58);
+            lblUsuario.Location = new Point(65, 77);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(50, 15);
+            lblUsuario.Size = new Size(63, 20);
             lblUsuario.TabIndex = 0;
             lblUsuario.Text = "Usuario ";
             // 
             // lblContraseña
             // 
             lblContraseña.AutoSize = true;
-            lblContraseña.Location = new Point(57, 123);
+            lblContraseña.Location = new Point(65, 164);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(70, 15);
+            lblContraseña.Size = new Size(87, 20);
             lblContraseña.TabIndex = 1;
             lblContraseña.Text = "Contraseña ";
             // 
             // lblModulo
             // 
             lblModulo.AutoSize = true;
-            lblModulo.Location = new Point(57, 184);
+            lblModulo.Location = new Point(65, 245);
             lblModulo.Name = "lblModulo";
-            lblModulo.Size = new Size(49, 15);
+            lblModulo.Size = new Size(61, 20);
             lblModulo.TabIndex = 2;
             lblModulo.Text = "Modulo";
             // 
             // txtUsuario
             // 
             txtUsuario.ForeColor = Color.FromArgb(0, 0, 64);
-            txtUsuario.Location = new Point(176, 56);
-            txtUsuario.Margin = new Padding(3, 2, 3, 2);
+            txtUsuario.Location = new Point(201, 75);
             txtUsuario.MaxLength = 10;
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(156, 23);
+            txtUsuario.Size = new Size(178, 27);
             txtUsuario.TabIndex = 3;
             txtUsuario.TextChanged += cmdUsuario_TextChanged;
             // 
             // txtContraseña
             // 
             txtContraseña.Enabled = false;
-            txtContraseña.Location = new Point(176, 121);
-            txtContraseña.Margin = new Padding(3, 2, 3, 2);
+            txtContraseña.Location = new Point(201, 161);
             txtContraseña.MaxLength = 10;
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PasswordChar = '•';
-            txtContraseña.Size = new Size(156, 23);
+            txtContraseña.Size = new Size(178, 27);
             txtContraseña.TabIndex = 4;
             // 
             // cmdAceptar
             // 
             cmdAceptar.BackColor = SystemColors.ActiveBorder;
-            cmdAceptar.Enabled = false;
-            cmdAceptar.Location = new Point(453, 76);
-            cmdAceptar.Margin = new Padding(3, 2, 3, 2);
+            cmdAceptar.Location = new Point(107, 331);
             cmdAceptar.Name = "cmdAceptar";
-            cmdAceptar.Size = new Size(82, 22);
+            cmdAceptar.Size = new Size(94, 29);
             cmdAceptar.TabIndex = 6;
             cmdAceptar.Text = "Aceptar";
             cmdAceptar.UseVisualStyleBackColor = false;
@@ -103,32 +99,30 @@
             // cmdCancelar
             // 
             cmdCancelar.BackColor = SystemColors.ControlDark;
-            cmdCancelar.Location = new Point(453, 154);
-            cmdCancelar.Margin = new Padding(3, 2, 3, 2);
+            cmdCancelar.Location = new Point(328, 331);
             cmdCancelar.Name = "cmdCancelar";
-            cmdCancelar.Size = new Size(82, 22);
+            cmdCancelar.Size = new Size(94, 29);
             cmdCancelar.TabIndex = 7;
             cmdCancelar.Text = "Cancelar";
             cmdCancelar.UseVisualStyleBackColor = false;
             cmdCancelar.Click += cmdCancelar_Click;
             // 
-            // lstModulo
+            // cmbModulo
             // 
-            lstModulo.FormattingEnabled = true;
-            lstModulo.Items.AddRange(new object[] { "Administracion ", "Sistemas", "Compras", "Ventas" });
-            lstModulo.Location = new Point(176, 178);
-            lstModulo.Margin = new Padding(3, 2, 3, 2);
-            lstModulo.Name = "lstModulo";
-            lstModulo.Size = new Size(156, 23);
-            lstModulo.TabIndex = 8;
+            cmbModulo.FormattingEnabled = true;
+            cmbModulo.Items.AddRange(new object[] { "ADM", "SIST", "COM ", "VTA" });
+            cmbModulo.Location = new Point(201, 237);
+            cmbModulo.Name = "cmbModulo";
+            cmbModulo.Size = new Size(178, 28);
+            cmbModulo.TabIndex = 8;
             // 
             // frmLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(700, 338);
-            Controls.Add(lstModulo);
+            ClientSize = new Size(551, 451);
+            Controls.Add(cmbModulo);
             Controls.Add(cmdCancelar);
             Controls.Add(cmdAceptar);
             Controls.Add(txtContraseña);
@@ -136,9 +130,9 @@
             Controls.Add(lblModulo);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmLogin";
             Text = "Login";
+            Load += frmLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -152,6 +146,6 @@
         private TextBox txtContraseña;
         private Button cmdAceptar;
         private Button cmdCancelar;
-        private ComboBox lstModulo;
+        private ComboBox cmbModulo;
     }
 }
