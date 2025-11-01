@@ -39,7 +39,7 @@ namespace prySinterpartSRL_Roldan
 
         private void cmdAceptar_Click(object sender, EventArgs e)
         {
-           Calcular();
+            Calcular();
         }
 
         private void cmdCancelar_Click(object sender, EventArgs e)
@@ -109,6 +109,14 @@ namespace prySinterpartSRL_Roldan
                 {
                     this.Close();
                 }
+            }
+        }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true; 
             }
         }
     }

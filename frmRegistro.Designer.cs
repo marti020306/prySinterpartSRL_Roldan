@@ -74,6 +74,7 @@
             txtUsuario.Size = new Size(178, 27);
             txtUsuario.TabIndex = 3;
             txtUsuario.TextChanged += cmdUsuario_TextChanged;
+            txtUsuario.KeyPress += txtUsuario_KeyPress;
             // 
             // txtContraseña
             // 
